@@ -1,0 +1,44 @@
+extends layout
+
+block layout content
+  div.Navbar
+    h1.Banner Arty-aRT
+    ul
+      li: a(href='/') Home
+      li: a(href='about') About Me
+      li: a(href='portfolio') portfolio
+      li: a(href='contact') Contact 
+      
+  div.container
+    div.AboutText  
+      div.portrait
+        img.img-fluid.rounded(src='https://placekitten.com/400/300') 
+      div.name  
+        h3 Lorem
+      div.bio  
+        p Lorem Art as Representation or Mimesis. Plato first developed the idea of art as “mimesis,” which, in Greek, means copying or imitation. For this reason, the primary meaning of art was, for centuries, defined as the representation or replication of something that is beautiful or meaningful. Until roughly the end of the eighteenth century, a work of art was valued on the basis of how faithfully it replicated its subject. This definition of "good art" has had a profound impact on modern and condefined as the representation or replication of something that is beautiful or meaningful. Until roughly the end of the eighteenth century, a work of art was valued on the basis of how faithfully it replicated its subject. This definition of "good art" has had a profound impact on modern and contemporary artists; as Gordon Graham writes, “It leads people to place a high value on very lifelike portraits such as those by ighteenth century, a work of art was valued on the basis of how faithfully it replicated its sand contemporary artists; as Gordon Graham writes, “It leads people to place a high value on ve
+    
+  div.container.py-5.box
+    div.grid.specialty
+      div.inner.card.mx-2
+        div.card-body
+          img.img-fluid(src='https://placekitten.com/300/300')
+          h3.text-primary.text-center.p-2 Drawing 
+      div.inner.card.mx-2
+        div.card-body  
+          img.img-fluid(src='https://placekitten.com/300/300') 
+          h3.text-primary.text-center.p-2 Painting
+      div.inner.card.mx-2
+        div.card-body
+          img.img-fluid(src='https://placekitten.com/300/300') 
+          h3.text-primary.text-center.p-2 Graphic
+  footer.HomeFooter
+    p  &copy 2019 
+    div.icons
+      p.socialicons follow me on social media
+         a(href='#')
+      i.fa.fa-facebook-square
+         a(href='#')
+      i.fa.fa-twitter
+         a(href='#')
+      i.fa.fa-instagram   

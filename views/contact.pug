@@ -1,0 +1,47 @@
+extends layout
+
+block layout content
+  div.Navbar
+    h1.Banner Arty-aRT
+    ul
+      li: a(href='/') Home
+      li: a(href='about') About Me
+      li: a(href='portfolio') portfolio
+      li: a(href='contact') Contact 
+  
+  .main.container
+    .row
+      .col-md-6.col-md-offset-3
+        h1.display-4.m-b-2 Want to connect?
+            
+                
+        h3 Or just want to meet for coffee?
+        h3 Shoot me an email
+
+        // register form
+        form(method='POST' action='/register')
+          div.form-group
+            label(for='name') Name:
+            input#name.form-control(type='text', placeholder='first and last' name='name')
+          div.form-group
+            label(for='email') Email:
+            input#email.form-control(type='email', placeholder='name@email.com' name='email')
+          div.form-group
+            label(for='favoriteArtwork') Favorite ArtWork:
+            input#favoriteArtwork.form-control(type='text', placeholder='name of artwork' name='favoriteArtwork')
+          div.form-group
+            label(for="exampleFormControlTextarea1") Message:
+            textarea.form-control#exampleFormControlTextarea1 
+          button.btn.btn-primary(type='submit') Send
+    
+    
+  footer.HomeFooter
+    p copyright &copy 2019
+    div.icons
+      p.socialicons follow me on social media
+         a(href='#')
+      i.fa.fa-facebook-square
+         a(href='#')
+      i.fa.fa-twitter
+         a(href='#')
+      i.fa.fa-instagram  

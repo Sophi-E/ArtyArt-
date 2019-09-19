@@ -1,0 +1,98 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+.Navbar {
+  text-align: center;
+  padding: 0.5em 0 0 0;
+  background-color: #192a56;
+}
+.Navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.Navbar li {
+  list-style: none;
+}
+.Navbar a {
+  color: #ccc;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.Banner {
+  background-color: #fff;
+  color: #192a56;
+  padding: 20px 2px;
+}
+.ImgContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  background: url("books.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 80vh;
+}
+.InnerContainer {
+  grid-column: 2 / 4;
+  grid-row: 2 / 3;
+  text-align: center;
+  color: #fff;
+}
+
+.BottomContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 20px;
+}
+.bigger {
+  grid-column: 1 / 4;
+}
+
+.portrait {
+  grid-area: portrait;
+  grid-column: 2 / 3;
+}
+.name {
+  grid-area: name;
+  text-align: center;
+}
+.bio {
+  grid-area: bio;
+  line-height: 2;
+}
+.AboutText {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-gap: 10px;
+  grid-template-areas:
+    "portrait portrait portrait"
+    "name name name"
+    "bio bio bio";
+}
+.specialty {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-gap: 10px;
+}
+
+.portfolio-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+.HomeFooter {
+  background-color: #2f363f;
+  color: #fff;
+  padding: 2em;
+  margin-top: 2em;
+  font-size: 1em;
+  font-weight: 600;
+  text-align: right;
+}
