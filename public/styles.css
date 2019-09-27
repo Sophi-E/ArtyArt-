@@ -40,7 +40,7 @@ body {
   grid-column: 2 / 4;
   grid-row: 2 / 3;
   text-align: center;
-  color: #fff;
+  color: #e6e9f0;
 }
 
 .BottomContainer {
@@ -88,11 +88,36 @@ body {
   grid-gap: 10px;
 }
 .HomeFooter {
-  background-color: #2f363f;
+  background-color: #192a56;
+  color: #fff; 
+  text-align: center;
+  margin-top: 20px;
+}
+.copyright{
+  padding: 15px 0;
+}
+
+.fa{
+  padding: 20px;
+}
+.mybtn{
+  background-color: #192a56;
   color: #fff;
-  padding: 2em;
-  margin-top: 2em;
-  font-size: 1em;
-  font-weight: 600;
-  text-align: right;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 10px;
+  margin: 20px 0 30px 0;
+}
+@media screen and (max-width: 600px){
+  .BottomContainer{
+    grid-template-columns: 1fr;
+  }
+  .specialty {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .portfolio-box{
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
 }
