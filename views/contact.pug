@@ -19,7 +19,7 @@ block layout content
         h3 Shoot me an email
 
         // register form
-        form(method='POST' action='/register')
+        form(action="https://formspree.io/email@domain.tld" method="POST")
           div.form-group
             label(for='name') Name:
             input#name.form-control(type='text', placeholder='first and last' name='name')
@@ -31,8 +31,8 @@ block layout content
             input#favoriteArtwork.form-control(type='text', placeholder='name of artwork' name='favoriteArtwork')
           div.form-group
             label(for="exampleFormControlTextarea1") Message:
-            textarea.form-control#exampleFormControlTextarea1 
-          button.mybtn(type='submit') Send
+            textarea.form-control#exampleFormControlTextarea1(name='textarea', placeholder='Enter your message...') 
+          button.mybtn(type='submit' ) Send
     
     
   footer.HomeFooter
