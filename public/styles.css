@@ -120,4 +120,12 @@ body {
     grid-template-columns: 1fr;
     justify-items: center;
   }
+  .Navbar ul {
+    display: block;
+    
+  }
+  .Navbar li{
+    padding: 10px 0;
+
+  }
 }
